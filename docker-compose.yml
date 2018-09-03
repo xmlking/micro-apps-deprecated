@@ -73,7 +73,7 @@ services:
       - schema-registry
 
   guestbook-api:
-    image: xmlking/guestbook-api:1.0.0-SNAPSHOT
+    image: xmlking/micro-apps-guestbook-api:1.0.0-SNAPSHOT
     environment:
       SPRING_PROFILES_ACTIVE: docker
       MONGO_HOST: mongodb
@@ -87,12 +87,12 @@ services:
       - mongodb
 
   stream-api:
-    image: xmlking/stream-api:1.0.0-SNAPSHOT
+    image: xmlking/micro-apps-stream-api:1.0.0-SNAPSHOT
     environment:
       SPRING_PROFILES_ACTIVE: docker
 
   guestbook-app:
-    image: xmlking/guestbook-app:1.0.0-SNAPSHOT
+    image:xmlking/micro-apps-guestbook-app:1.0.0-SNAPSHOT
     ports:
       - 8080:8080
     environment:
