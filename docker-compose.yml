@@ -92,7 +92,7 @@ services:
       SPRING_PROFILES_ACTIVE: docker
 
   guestbook-app:
-    image:xmlking/micro-apps-guestbook-app:1.0.0-SNAPSHOT
+    image: xmlking/micro-apps-guestbook-app:1.0.0-SNAPSHOT
     ports:
       - 8080:8080
     environment:
