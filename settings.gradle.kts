@@ -2,9 +2,11 @@ rootProject.name = "micro-apps"
 include(
     "libs:core",
     "libs:shared",
+    "libs:greeting",
+    "libs:guestbook",
     "apps:cli",
-    "apps:guestbook-service",
-    "apps:guestbook-service2",
-    "apps:stream-service",
+    "apps:greeting-api",
+    "apps:guestbook-api",
+    "apps:stream-api",
     "apps:guestbook-app"
 )

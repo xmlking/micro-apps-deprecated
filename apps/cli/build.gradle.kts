@@ -24,6 +24,7 @@ kotlin {
 
 jib {
     to {
-        image = "xmlking/micro-apps-cli:${project.version}"
+        image = "xmlking/${rootProject.name}-${project.name}:${project.version}"
+        // image = "gcr.io/${gcloudProject}/${project.name}:${project.version}"
     }
 }

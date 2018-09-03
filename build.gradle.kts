@@ -29,12 +29,10 @@ allprojects {
 
 subprojects {
     plugins.withId("application") {
-        println("project $name has Application plugin")
         project.apply { plugin("com.google.cloud.tools.jib") }
     }
 
     plugins.withId("kotlin") {
-        println("project $name has kotlin plugin")
         dependencies {
             compile(kotlin("stdlib-jdk8"))
             compile(kotlin("reflect"))
@@ -46,7 +44,6 @@ subprojects {
 //    }
 
     plugins.withType(JavaPlugin::class.java).whenPluginAdded {
-        println("project $name has java plugin")
 //         plugins.apply "com.google.cloud.tools.jib"
 //        sourceCompatibility = 1.8
 //        configurations {
