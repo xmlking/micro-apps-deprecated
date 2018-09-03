@@ -15,7 +15,7 @@ services:
       MONGODB_REPLICA_SET_KEY: replicaset01
     volumes:
       - mongodb_primary_data:/bitnami
-#      - ./init.js:/init.js
+#      - ./deploy/mongodb/init.js:/init.js
 
   zookeeper:
     image: confluentinc/cp-zookeeper:5.0.0
