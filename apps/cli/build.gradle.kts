@@ -21,3 +21,9 @@ dependencies {
 kotlin {
     experimental.coroutines = Coroutines.ENABLE
 }
+
+jib {
+    to {
+        image = "xmlking/micro-apps-cli:${project.version}"
+    }
+}

@@ -42,7 +42,6 @@ dependencies {
 
 
 configure<DependencyManagementExtension> {
-    val springCloudVersion: String = "Finchley.RELEASE"
     val micronautVersion = "1.0.0.M4"
 
     imports {

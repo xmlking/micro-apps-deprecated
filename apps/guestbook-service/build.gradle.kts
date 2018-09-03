@@ -41,7 +41,7 @@ dependencies {
 
 configure<DependencyManagementExtension> {
     val springCloudVersion: String = "Finchley.RELEASE"
-    val springCloudStreamVersion = "Elmhurst.RELEASE"
+    val springCloudStreamVersion = "Fishtown.M2"
 
     imports {
         mavenBom("org.springframework.cloud:spring-cloud-dependencies:$springCloudVersion")
