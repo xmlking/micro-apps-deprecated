@@ -8,7 +8,6 @@ plugins {
     val shadowPluginVersion = "2.0.4"
     val jibPluginVersion = "0.9.10"
 
-    base
     java
     kotlin("jvm") version kotlinVersion apply false
     kotlin("kapt") version kotlinVersion apply false
@@ -23,12 +22,16 @@ plugins {
 allprojects {
     repositories {
         jcenter()
-//        mavenCentral()
     }
 }
 
 subprojects {
     plugins.withId("application") {
+        project.apply { plugin("com.google.cloud.tools.jib") }
+    }
+
+    plugins.withId("org.springframework.boot") {
+//        println("module $name has org.springframework.boot plugin")
         project.apply { plugin("com.google.cloud.tools.jib") }
     }
 
@@ -38,34 +41,13 @@ subprojects {
             compile(kotlin("reflect"))
         }
     }
-//    plugins.withType<ApplicationPlugin>().whenObjectAdded {
-//        println("ApplicationPlugin $name")
-//        project.apply { plugin("com.google.cloud.tools.jib") }
-//    }
 
     plugins.withType(JavaPlugin::class.java).whenPluginAdded {
-//         plugins.apply "com.google.cloud.tools.jib"
-//        sourceCompatibility = 1.8
-//        configurations {
-//            this.create("provided", {
-//                extendsFrom(configurations.compileOnly)
-//            })
-//        }
+        java {
+            sourceCompatibility = JavaVersion.VERSION_1_8
+            targetCompatibility = JavaVersion.VERSION_1_8
+        }
     }
-
-
-
-//    plugins.withType(JUnitPlatformPlugin).whenPluginAdded {
-//        junitPlatform {
-//            platformVersion junitPlatformVersion
-//                    enableStandardTestTask = true
-//        }
-//
-//        dependencies {
-//            testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: jupiterVersion
-//            testRuntime group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: jupiterVersion
-//        }
-//    }
 
     tasks {
         withType<KotlinCompile>().all {

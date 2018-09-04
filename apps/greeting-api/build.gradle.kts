@@ -26,7 +26,6 @@ configure<DependencyManagementExtension> {
 dependencies {
     // local libs modules
     compile(project(":libs:core"))
-    compile(project(":libs:shared"))
 
     compile("io.micronaut:http-client")
     compile("io.micronaut.configuration:mongo-reactive")

@@ -11,7 +11,6 @@ application {
 
 dependencies {
     compile(project(":libs:core"))
-    compile(project(":libs:shared"))
 
     testCompile(kotlin("test"))
     testCompile(kotlin("test-junit"))

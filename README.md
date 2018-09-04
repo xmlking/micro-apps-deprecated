@@ -43,3 +43,7 @@ gradle classifier:dependencyInsight --dependency spring-messaging
 # refresh dependencies
 gradle build -x test --refresh-dependencies 
 ```
+
+
+### Reference 
+* Creating a [Multi Module Project](https://spring.io/guides/gs/multi-module/)

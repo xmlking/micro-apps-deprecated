@@ -3,7 +3,6 @@ import org.jetbrains.kotlin.gradle.dsl.Coroutines
 import org.springframework.boot.gradle.dsl.SpringBootExtension
 
 plugins {
-    application
     kotlin("jvm")
     kotlin("plugin.spring")
     kotlin("plugin.noarg")
@@ -13,8 +12,6 @@ plugins {
 
 dependencies {
     // local libs modules
-    compile(project(":libs:core"))
-    compile(project(":libs:shared"))
     compile(project(":libs:guestbook"))
 
     // Spring
@@ -81,9 +78,5 @@ configure<SpringBootExtension> {
 }
 
 noArg {
-    annotation("micro.apps.NoArg")
-}
-
-application {
-    mainClassName = "micro.apps.guestbook.GuestbookAppKt"
+    annotation("micro.apps.shared.NoArg")
 }

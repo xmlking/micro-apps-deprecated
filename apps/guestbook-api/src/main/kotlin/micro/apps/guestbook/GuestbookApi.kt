@@ -6,8 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.context.annotation.Bean
 import org.springframework.boot.runApplication
 
-@SpringBootApplication
-class GuestbookApp {
+// Since shared lib's package layout is not at the same level of this class, we need to specify `scanBasePackages`
+@SpringBootApplication(scanBasePackages = ["micro.apps.guestbook"])
+class GuestbookApi {
 
     @Bean
     fun commonTags(): MeterRegistryCustomizer<MeterRegistry> {
@@ -20,5 +21,5 @@ class GuestbookApp {
 }
 
 fun main(args: Array<String>) {
-    runApplication<GuestbookApp>(*args)
+    runApplication<GuestbookApi>(*args)
 }
