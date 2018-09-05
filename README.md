@@ -47,3 +47,5 @@ gradle build -x test --refresh-dependencies
 
 ### Reference 
 * Creating a [Multi Module Project](https://spring.io/guides/gs/multi-module/)
+* Microservices in a Post-Kubernetes Era [link](https://www.infoq.com/articles/microservices-post-kubernetes)
+* Why is a [workspace](https://nrwl.io/nx/why-a-workspace) (or monorepo) needed? 
