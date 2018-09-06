@@ -33,20 +33,6 @@ docker-compose up broker
 
 > Start [Hello World Native API](./apps/hello-world-native/)
 
-### Gradle Commands
-```bash
-# upgrade project gradle version
-gradle wrapper --gradle-version 4.10 --distribution-type all
-# gradle daemon status 
-gradle --status
-gradle --stop
-# show dependencies
-gradle classifier:dependencies
-gradle classifier:dependencyInsight --dependency spring-messaging
-# refresh dependencies
-gradle build -x test --refresh-dependencies 
-```
-
 
 ### Inspiration 
 * Creating a [Multi Module Project](https://spring.io/guides/gs/multi-module/)
