@@ -14,7 +14,7 @@ Monorepo(apps, libs) project to showcase workspace setup with multiple apps and 
 ### Run
 
 #### Docker
-> start mongodb, kafka
+> start app dependencies: mongodb, kafka 
 ```bash
 # start local mongodb
 docker-compose up -V mongodb
@@ -45,7 +45,7 @@ gradle build -x test --refresh-dependencies
 ```
 
 
-### Reference 
+### Inspiration 
 * Creating a [Multi Module Project](https://spring.io/guides/gs/multi-module/)
 * Microservices in a Post-Kubernetes Era [link](https://www.infoq.com/articles/microservices-post-kubernetes)
 * Why is a [workspace](https://nrwl.io/nx/why-a-workspace) (or monorepo) needed? 

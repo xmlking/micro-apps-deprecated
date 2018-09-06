@@ -1,0 +1,6 @@
+---
+micronaut:
+  application:
+    name: hello-world-native
+  server:
+    port: 8080

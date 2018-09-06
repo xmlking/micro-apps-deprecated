@@ -64,13 +64,15 @@ bazel clean --expunge
 
 
 #### Create Workspace
+TODO
 ```bash
  
 ```
  
 #### Generate Artifacts
-
+TODO
 ```bash
+cd apps/greeting-api
 mn create-controller micro.apps.greeting.controllers.greeting
 mn create-bean  micro.apps.greeting.services.greetingService
 mn create-client greetingClient

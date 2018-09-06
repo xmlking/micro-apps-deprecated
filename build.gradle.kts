@@ -7,6 +7,7 @@ plugins {
     val springBootVersion = "2.0.4.RELEASE"
     val shadowPluginVersion = "2.0.4"
     val jibPluginVersion = "0.9.10"
+    val ltgtPluginVersion = "0.18"
 
     java
     kotlin("jvm") version kotlinVersion apply false
@@ -17,6 +18,8 @@ plugins {
     id("io.spring.dependency-management") version springDependencyManagement apply false
     id("com.github.johnrengelman.shadow") version shadowPluginVersion apply false
     id("com.google.cloud.tools.jib") version jibPluginVersion apply false
+    id("net.ltgt.apt-idea") version ltgtPluginVersion apply false
+    id("net.ltgt.apt-eclipse") version ltgtPluginVersion apply false
 }
 
 allprojects {

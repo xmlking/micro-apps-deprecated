@@ -8,5 +8,6 @@ include(
     "apps:greeting-api",
     "apps:guestbook-api",
     "apps:stream-api",
-    "apps:guestbook-app"
+    "apps:guestbook-app",
+    "apps:hello-world-native"
 )

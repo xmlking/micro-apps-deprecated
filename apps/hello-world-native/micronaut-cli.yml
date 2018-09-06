@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: micro.apps.nativee
+---
+testFramework: junit
+sourceLanguage: java

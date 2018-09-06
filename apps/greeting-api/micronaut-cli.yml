@@ -1,5 +1,5 @@
 profile: service
-defaultPackage: micro.apps.guestbook
+defaultPackage: micro.apps.greeting
 ---
 testFramework: spek
 sourceLanguage: kotlin

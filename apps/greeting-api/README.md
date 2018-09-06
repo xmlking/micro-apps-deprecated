@@ -12,11 +12,6 @@ gradle :apps:greeting-api:build
 gradle :apps:greeting-api:build -x test 
 # docker build
 gradle :apps:greeting-api:jibDockerBuild
-# native build
-gradle :apps:greeting-api:assemble
-# This will generate a build/reflect.json file after performing classloading analysis.
-java -jar build/libs/greeting-api-1.0.0-SNAPSHOT-all.jar
-
 ```
 
 ### Run
@@ -56,4 +51,3 @@ curl localhost:8080/hello
 ## Credit
 * Containerize a [Micronaut with Jib](https://github.com/GoogleContainerTools/jib/tree/master/examples/micronaut)
 * @TimRiemer [Micronaut with Spek2](https://github.com/TimRiemer/micronaut_kotlin_spek)
-* Micronaut Java Graal Native Image [link](https://github.com/graemerocher/micronaut-graal-experiments/tree/master/hello-world-java)
