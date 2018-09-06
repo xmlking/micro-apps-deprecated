@@ -6,7 +6,7 @@ package micro.apps.cli
 class CliApp {
     val greeting: String
         get() {
-            return "Hello world."
+            return "Hello World"
         }
 }
 

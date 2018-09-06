@@ -1,14 +1,15 @@
 Micro Apps
 ==========
-
+Modern microservices for Post-Kubernetes Era.
 Monorepo(apps, libs) project to showcase workspace setup with multiple apps and shared libraries
 
 ### Features
 1. **Polyglot** - Support multiple languages (java, kotlin, groovy)
-1. Support multiple app frameworks (spring-boot, cli, micronaut)
-2. Support multiple testing frameworks (Spock, Spek and JUnit5) 
-3. Build Docker and [OCI](https://github.com/opencontainers/image-spec) images with [Jib](https://github.com/GoogleContainerTools/jib) 
-4. Cloud Native (discovery, health checks, observability)
+2. Support multiple app frameworks (spring-boot, cli, micronaut)
+3. Support multiple testing frameworks (Spock, Spek, kotlin-test and JUnit5) 
+4. Build **lightweight** Docker and [OCI](https://github.com/opencontainers/image-spec) images with [Jib](https://github.com/GoogleContainerTools/jib)
+5. Build native binaries using [GraalVM](https://www.graalvm.org/)
+6. Cloud Native (Service Mesh, health checks, observability)
 
 
 ### Run
@@ -29,6 +30,8 @@ docker-compose up broker
 
 #### Micronaut
 > Start [Greeting API](./apps/greeting-api/)
+
+> Start [Hello World Native API](./apps/hello-world-native/)
 
 ### Gradle Commands
 ```bash

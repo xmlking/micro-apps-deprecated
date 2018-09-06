@@ -13,7 +13,7 @@ dependencies {
     compile(project(":libs:core"))
 
     testCompile(kotlin("test"))
-    testCompile(kotlin("test-junit"))
+    testCompile(kotlin("test-junit5"))
 }
 
 

@@ -2,9 +2,14 @@ CLI App
 =======
 CLI demo app. 
 
-### Build
+### Run
 ```bash
 gradle :apps:cli:run
+```
+
+### Test
+```bash
+gradle :apps:cli:test
 ```
 
 ### Build
